@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birder's Eye View Blog</title>
+    <link rel="stylesheet" href="style.CSS">
+</head>
+<body>
+    <header>
+        <h1>Birder's Eye View</h1>
+    </header>
+    <header>
+        <img class="logo" src="images/logo3.jpg" alt="logo">
+        <nav>
+           <ul class="nav__links"> 
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Why Bird?</a></li>
+            <li><a href="#">Birding for Beginners</a></li>
+            <a class="cta" href="#"><button>Contact</button></a>
+
+           </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="text">
+           Contact us Form
+        </div>
+        <form action="#">
+           <div class="form-row">
+              <div class="input-data">
+                 <input type="text" required>
+                 <div class="underline"></div>
+                 <label for="">First Name</label>
+              </div>
+              <div class="input-data">
+                 <input type="text" required>
+                 <div class="underline"></div>
+                 <label for="">Last Name</label>
+              </div>
+           </div>
+           <div class="form-row">
+              <div class="input-data">
+                 <input type="text" required>
+                 <div class="underline"></div>
+                 <label for="">Email Address</label>
+              </div>
+              <div class="input-data">
+                 <input type="text" required>
+                 <div class="underline"></div>
+                 <label for="">Website Name</label>
+              </div>
+           </div>
+           <div class="form-row">
+           <div class="input-data textarea">
+              <textarea rows="8" cols="80" required></textarea>
+              <br />
+              <div class="underline"></div>
+              <label for="">Write your message</label>
+              <br />
+              <div class="form-row submit-btn">
+                 <div class="input-data">
+                    <div class="inner"></div>
+                    <input type="submit" value="submit">
+                 </div>
+              </div>
+        </form>
+        </div>
+        <canvas id="myCanvas">
+            Your browser does not support the HTML canvas tag.</canvas>
+            
+            <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            
+            // Create gradient
+            var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+            grd.addColorStop(0,"blue");
+            grd.addColorStop(1,"white");
+            
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(10,10,150,80);
+            </script>
+
+            <audio controls autoplay>
+                <source src="Audio/Cresent Bend Walk 1 copy.mp4" type="audio/ogg">
+              Your browser does not support the audio element.
+              </audio>
+</body>
+</html>

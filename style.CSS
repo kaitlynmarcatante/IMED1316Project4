@@ -134,7 +134,7 @@ button:hover{
     content: "";
     height: 2px;
     width: 100%;
-    background: #3498db;
+    background: #308ecd;
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.3s ease;
